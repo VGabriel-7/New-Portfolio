@@ -1,0 +1,12 @@
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border: 3px solid;
+}
+
+body {
+  border: 1px solid green;
+  margin: 0;
+  height: 99vh;
+}
