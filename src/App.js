@@ -7,12 +7,14 @@ import Projects from './pages/Projects';
 
 function App() {
   return (
-    <Switch>
-      <Route path="/" component={ AsideBar } />
-      <Route path="/home" component={ Home } />
-      <Route path="/about" component={ About } />
-      <Route path="/projects" component={ Projects } />
-    </Switch>
+    <>
+      <AsideBar />
+      <Switch>
+        <Route path="/home" component={ Home } />
+        <Route path="/about" component={ About } />
+        <Route path="/projects" component={ Projects } />
+      </Switch>
+    </>
   );
 }
 

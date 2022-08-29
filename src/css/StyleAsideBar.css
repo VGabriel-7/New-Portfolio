@@ -1,0 +1,37 @@
+.asideBar {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid rgba(255, 0, 0, 0.197);
+  height: 100.7%;
+  width: 60px;
+  background: rgb(24,24,24);
+}
+
+.sectionNav {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 25px;
+  flex-shrink: 0;
+  grid-row-start: 12;
+}
+
+.sectionContact {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 20;
+  gap: 10px;
+}
+
+section a img {
+  width: 18px;
+}
+
+span {
+  color: rgb(91, 89, 89);
+}
+
+span:hover {
+  color: rgba(255, 0, 0, 0.345);
+}
