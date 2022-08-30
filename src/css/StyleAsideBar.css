@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   border-right: 2px solid rgba(255, 0, 0, 0.197);
-  height: 100.7%;
+  height: 101%;
   width: 60px;
   background: rgb(24,24,24);
 }
@@ -24,14 +24,15 @@
   gap: 10px;
 }
 
-section a img {
-  width: 18px;
+.Link, .socialMedia {
+  color: rgba(68, 68, 71, 0.8);
 }
 
-span {
-  color: rgb(91, 89, 89);
+.Link:hover {
+  color: rgba(255, 255, 255, 0.794);
 }
 
-span:hover {
-  color: rgba(255, 0, 0, 0.345);
-}
+.github:hover { color: white; }
+.linkedin:hover { color: rgb(22, 102, 194); }
+.whatsapp:hover { color: rgb(77,224,90); }
+.instagram:hover { color: rgb(237,60,74); } 
