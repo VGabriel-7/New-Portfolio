@@ -5,7 +5,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
 import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import '../css/StyleAsideBar.css';
@@ -26,9 +25,6 @@ export default function AsideBar() {
         </Link>
         <Link to="/projects">
           <FolderOpenOutlinedIcon className="Link" sx={ { fontSize: 30 } } />
-        </Link>
-        <Link to="/contact-me">
-          <ChatOutlinedIcon className="Link" sx={ { fontSize: 30 } } />
         </Link>
       </nav>
       <section

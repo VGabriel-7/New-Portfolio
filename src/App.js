@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import ContactMe from './pages/ContactMe';
+import './style.css';
 
 function App() {
   return (

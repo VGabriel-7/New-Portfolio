@@ -1,5 +1,34 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import ChatOutlinedIcon from '@mui/icons-material/ChatOutlined';
+import '../css/StyleHome.css';
 
 export default function Home() {
-  return <h1>Home</h1>;
+  return (
+    <div className="backgrouHome">
+      <section className="componentHome">
+        <div id="div">
+          <h1>
+            Hi,
+            {' '}
+            <br />
+            {' '}
+            I&apos;m Gabriel,
+            {' '}
+            <br />
+            {' '}
+            web fullstack developer.
+          </h1>
+          <p>Front End Developer</p>
+        </div>
+        <Link to="/contact-me" className="Link">
+          <div className="contactMediv">
+            <span>Contact-me</span>
+            {' '}
+            <ChatOutlinedIcon className="contactMe" />
+          </div>
+        </Link>
+      </section>
+    </div>
+  );
 }
