@@ -17,7 +17,7 @@ export default function AsideBar() {
       <nav
         className="sectionNav"
       >
-        <Link to="/home">
+        <Link to="/">
           <HomeIcon className="Link" sx={ { fontSize: 30 } } />
         </Link>
         <Link to="/about">

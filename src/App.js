@@ -12,10 +12,10 @@ function App() {
     <>
       <AsideBar />
       <Switch>
-        <Route path="/home" component={ Home } />
         <Route path="/about" component={ About } />
         <Route path="/projects" component={ Projects } />
         <Route path="/contact-me" component={ ContactMe } />
+        <Route path="/" component={ Home } />
       </Switch>
     </>
   );
