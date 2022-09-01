@@ -5,5 +5,5 @@ export default function Projects() {
     document.title = 'Projects';
   }, []);
 
-  return <h1>Projects</h1>;
+  return <h1>Project</h1>;
 }
