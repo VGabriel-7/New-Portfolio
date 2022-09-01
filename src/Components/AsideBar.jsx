@@ -1,10 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { AiFillGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import '../css/StyleAsideBar.css';
@@ -35,14 +34,14 @@ export default function AsideBar() {
           target="_blank"
           rel="noreferrer"
         >
-          <GitHubIcon className="socialMedia github" />
+          <AiFillGithub className="socialMedia github" />
         </a>
         <a
           href="https://www.linkedin.com/in/vin%C3%ADcius-gabriel-055a65220/"
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedInIcon className="socialMedia linkedin" />
+          <AiOutlineLinkedin className="socialMedia linkedin" />
         </a>
         <a
           href="http://wa.me//5575997145920"

@@ -21,6 +21,11 @@
   flex-direction: column;
   grid-row-start: 20;
   gap: 10px;
+  text-align: center;
+}
+
+.sectionContact svg {
+  font-size: 25px;
 }
 
 .Link, .socialMedia {
