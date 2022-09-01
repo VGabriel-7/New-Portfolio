@@ -1,0 +1,37 @@
+.asideBar {
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  height: 101%;
+  width: 70px;
+  background: #181818;
+}
+
+.sectionNav {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 25px;
+  flex-shrink: 0;
+  grid-row-start: 12;
+}
+
+.sectionContact {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 20;
+  gap: 10px;
+}
+
+.Link, .socialMedia {
+  color: rgba(68, 68, 71, 0.8);
+}
+
+.Link:hover {
+  color: #0CF2C8;
+}
+
+.github:hover { color: white; }
+.linkedin:hover { color: rgb(22, 102, 194); }
+.whatsapp:hover { color: rgb(77,224,90); }
+.instagram:hover { color: rgb(237,60,74); } 
