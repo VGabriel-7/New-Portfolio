@@ -1,0 +1,57 @@
+.containerProjects {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #424344fc, #181818);
+  text-align: center;
+}
+
+/* Animação e estilização do project-title */
+.project-title {
+  animation: animationTitle 0.5s forwards;
+  font-size: 5em;
+  transform: translateY(-15px);
+}
+
+@keyframes animationTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Estilização do carrocel de projetos */
+.github-projects {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  white-space: nowrap;
+  width: 60vw;
+  height: 50vh;
+  gap: 100px;
+  padding: 40px;
+  /* background-color: greenyellow; */
+}
+
+.container-repo {
+  background: linear-gradient(45deg, #ffffff06,
+  #ffffff36, #ffffff75, #ffffffb1, #ffffff);
+  width: 550px;
+  min-width: 350px;
+  height: 400px;
+  display: inline-block;
+  text-align: center;
+}
+
+.link-repo {
+  color: white;
+  font-size: 2em;
+}
+
+.link-repo:hover {
+  text-decoration: underline rgb(64, 255, 0);
+}
