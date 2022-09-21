@@ -14,25 +14,36 @@ export default function Projects() {
     apiGitHub();
   }, []);
 
+  const wheeling = (event) => {
+    const scrol = 300;
+    if (event.deltaY > 0) {
+      event.target.scrollBy(scrol, 0);
+    } else {
+      event.target.scrollBy(-scrol, 0);
+    }
+  };
+
   return (
     <div className="containerProjects">
       <h1 className="project-title">Projects</h1>
       <section className="github-projects">
-        {repos.length > 0 ? repos.map((repo) => (
-          <div
-            className="container-repo"
-            key={ repo.name }
-          >
-            <a
-              className="link-repo"
-              href={ repo.html_url }
-              target="_blank"
-              rel="noopener noreferrer"
+        <div className="projects" onWheel={ wheeling }>
+          {repos.length > 0 ? repos.map((repo) => (
+            <div
+              className="project"
+              key={ repo.name }
             >
-              { repo.name }
-            </a>
-          </div>
-        )) : <p>Loading...</p>}
+              <a
+                className="link-repo"
+                href={ repo.html_url }
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                { repo.name }
+              </a>
+            </div>
+          )) : <p>Loading...</p>}
+        </div>
       </section>
     </div>
   );
