@@ -23,7 +23,9 @@ export default function Home() {
             {' '}
             web fullstack developer.
           </h1>
-          <p>Front End Developer</p>
+          <h1 className="profession">
+            React | Javascript | Jest | RTL | Docker | MySQL
+          </h1>
         </div>
         <Link to="/contact-me" className="Link">
           <div className="contactMediv">

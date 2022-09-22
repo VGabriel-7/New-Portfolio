@@ -45,7 +45,7 @@
   }
 }
 
-span:hover {
+span:hover, .contactMediv svg {
   animation: animar 0.7s linear infinite alternate-reverse;
 }
 
@@ -58,7 +58,9 @@ span {
   font-size: 3em;
 }
 
-p {
-  margin: -40px 20px 40px;
+.profession {
+  font-size: 1.4em;
+  font-weight: lighter;
+  margin: 15px 43px 30px;
   font-style: italic;
 }

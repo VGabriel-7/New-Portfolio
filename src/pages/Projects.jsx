@@ -15,7 +15,7 @@ export default function Projects() {
   }, []);
 
   const wheeling = (event) => {
-    const scrol = 300;
+    const scrol = 400;
     if (event.deltaY > 0) {
       event.target.scrollBy(scrol, 0);
     } else {

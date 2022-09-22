@@ -28,15 +28,18 @@
 
 /* Estilização do carrocel de projetos */
 .github-projects {
+  position: relative;
   width: 40vw;
   height: 50vh;
   align-self: center;
   /* background-color: greenyellow; */
+  margin-top: 9%;
   padding: 10px 0;
 }
 
 .projects::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0);
+  height: 7px;
 }
 
 .projects::-webkit-scrollbar-thumb {
@@ -72,4 +75,20 @@
 
 .link-repo:hover {
   text-decoration: underline rgb(64, 255, 0);
+}
+
+.rightArrow {
+  font-size: 40px;
+  position: absolute;
+  color: rgba(11, 10, 10, 0.311);
+  right: 0;
+  top: 45%;
+}
+
+.rightArrow:active {
+  color: rgba(11, 10, 10, 0.972);
+}
+
+.rightArrow:hover {
+  cursor: pointer;
 }
