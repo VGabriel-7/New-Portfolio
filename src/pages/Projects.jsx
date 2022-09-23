@@ -1,18 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext } from 'react';
+import MyContext from '../Contex/MyContext';
 import '../css/Projects.css';
 
 export default function Projects() {
-  const [repos, setRepos] = useState([]);
-
-  useEffect(() => {
-    document.title = 'Projects';
-    const apiGitHub = async () => {
-      const reposArray = await fetch('https://api.github.com/users/VGabriel-7/repos')
-        .then((promise) => promise.json());
-      setRepos(reposArray);
-    };
-    apiGitHub();
-  }, []);
+  const { repos } = useContext(MyContext);
 
   const wheeling = (event) => {
     const scrol = 400;
